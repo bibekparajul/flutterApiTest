@@ -1,4 +1,6 @@
-import 'package:apipractice/home_screen.dart';
+import 'package:apipractice/screens/home_screen.dart';
+import 'package:apipractice/screens/main_screen.dart';
+import 'package:apipractice/screens/photos_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: MainScreen(),
       title: "Api",
       theme: ThemeData(primarySwatch: Colors.blue),
     );
