@@ -1,5 +1,7 @@
 import 'package:apipractice/screens/home_screen.dart';
 import 'package:apipractice/screens/photos_screen.dart';
+import 'package:apipractice/screens/shop_product_screen.dart';
+import 'package:apipractice/screens/user_screen_apiTest.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -27,6 +29,22 @@ class MainScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => PhotosScreen()));
               },
               child: Text('Move to Photos Api'),
+            ),
+            SizedBox(height: 12,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => UserScreenApiTest()));
+              },
+              child: Text('Move to User Api'),
+            ),
+            SizedBox(height: 12,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ShopProductScreen()));
+              },
+              child: Text('Move to Shop Product Api'),
             )
           ],
         ),
